@@ -64,7 +64,7 @@ class Scss extends CssPreprocessor
             $scss->setFormatter($this->compilerOptions['formatter']);
         }
 
-        return $scss->compileString($scssCode);
+        return $scss->compileString($scssCode)->getCss();
     }
 
     /**
